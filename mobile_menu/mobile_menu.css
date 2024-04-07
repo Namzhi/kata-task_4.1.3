@@ -33,12 +33,12 @@ body {
   margin-right: 16.73px;
 }
 .mobile_menu__logo {
-  cursor: pointer;
   width: 97px;
   height: 51px;
   margin-top: 18.73px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .mobile_menu__logo:hover {
   -webkit-filter: grayscale(1);
@@ -90,7 +90,7 @@ body {
   font-size: 24px;
   height: 32px;
   line-height: 32px;
-  letter-spacing: -0.6000000238px;
+  letter-spacing: -0.6px;
   text-align: left;
 }
 
@@ -161,11 +161,7 @@ body {
           transform: scale(1.1);
 }
 
-.languages_button:hover {
-  color: #7E7E82;
-}
-
-.icon {
+.mobile_menu__icon {
   width: 100%;
   height: auto;
 }
@@ -173,21 +169,23 @@ body {
 .languages {
   width: 87px;
   height: 24px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+.languages--position-bottom {
+  position: absolute;
+  bottom: 0;
+}
 .languages__button {
+  display: inline;
   width: 24px;
   height: 24px;
   font-family: TTLakes-Regular;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -0.200000003px;
-  margin-right: 16px;
+  letter-spacing: -0.2px;
+  margin-right: 7px;
 }
 .languages__button:hover {
   color: #7E7E82;
